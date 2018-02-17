@@ -37,6 +37,7 @@
      */
     function shortener($shortMe) {
         $array = explode(" ", $shortMe);
+        echo "Taras";
         for($i = 0; $i <= count($array); $i++){
             if(strlen($array[$i])>6){
                 $array[$i] = substr($array[$i], 0, 6)."*";
